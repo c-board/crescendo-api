@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700|Roboto+Slab:300&display=swap');
+
+.recipe-search {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: gray;
+  background-image: url('https://w.wallhaven.cc/full/83/wallhaven-83g22j.jpg');
+  background-size: fill;
+  background-position: top;
+  border-bottom: 1px solid lightgray;
+}
+
+.results {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-height: 800px;
+}
+
+.results-bg {
+  background-color: whitesmoke;
+}
+
+h1 {
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+}
+
+div.recipe-search input {
+  margin: 0px auto 40px auto;
+  display: block;
+  width: 78%;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* styles for recipe components */
+div.singleRecipe {
+  background-color: white;
+  color: #333;
+  margin: 20px 60px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  border-top: 3px solid lightgray;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+div.singleRecipe p,
+div.singleRecipe li {
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;
+}
+
+div.singleRecipe p span {
+  font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+p.product-title span {
+  font-size: 16px ;
+  font-weight: 600;
+}
+
+div.singleRecipe button {
+  font-size: 15px;
+  float: right;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  color: green;
+  background-color: whitesmoke;
+}
+
+div.singleRecipe button:hover {
+  background-color: lightgray;
+}
+
+img.product-shot {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+ul.recipe-directions {
+  list-style: none;
+  margin-left: -20px;
+}
+
+/* recipe detials */
+div.recipe-details {
+  margin-top: 20px;
+}
+
+div.hide,
+img.hide {
+  display: none;
+}
+
+.bob {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.bob img {
+  border-radius: 5px;
+  border-top: 3px solid lightgray;
+  border: 1px solid lightgray;
+  border-top: 3px solid lightgray;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.bob p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.bob p span {
+  color: green;
+}
+
+/* media queries */
+@media(max-width: 768px) {
+  img.product-shot {
+    margin: 10px auto 20px auto;
+    display: block;
+  }
+}
+
+@media(min-width: 768px) {
+  img.product-shot {
+    float: left;
+  }
+}
+
+@media(max-width: 576px) {
+  button.detail-toggle {
+    margin: 0 auto;
+    display: block;
+    min-width: 100%;
+  }
+}
+
+@media(min-width: 1200px) {
+  div.singleRecipe {
+    margin: 20px 120px;
+  }
+  hr {
+    margin: 40px 120px;
+  }
+}
