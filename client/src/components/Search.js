@@ -20,7 +20,7 @@ class Search extends Component {
      let searchString = this.state.searchString.trim().toLowerCase();
 
      if (searchString.length > 0) {
-       recipes = recipes.filter(function(i) {
+       recipes = recipes.filter((i) => {
          return i.title.toLowerCase().match( searchString );
        });
      }

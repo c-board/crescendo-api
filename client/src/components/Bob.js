@@ -16,12 +16,12 @@ class Bob extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     if(prevProps.recipes !== this.props.recipes){
-      this.setState({someState: this.props.recipes});
-      this.showBob();
+      this.setState({recipes: this.props.recipes});
+      this.toggleBob();
     }
   }
 
-  showBob = () => {
+  toggleBob = () => {
      if (this.state.recipes.length === 0) {
        this.setState({
          isShow: true
